@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HITUNG BANGUN DATAR"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/bangun_datar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPersegi"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Persegi"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnPersegiPanjang"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:onClick="persegiPanjang"
+            android:text="Persegi Panjang"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:gravity="center"
+            android:id="@+id/btnSegitiga"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="Segitiga"
+            android:text="Segitiga"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnJajarGenjang"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="jajargenjang"
+            android:text="Jajar Genjang"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnLingkaran"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="lingkaran"
+        android:text="Lingkaran"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:onClick="logout"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
